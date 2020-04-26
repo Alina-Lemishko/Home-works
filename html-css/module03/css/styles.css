@@ -1,0 +1,41 @@
+.body-section {
+  font-family: 'Playfair Display', serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-list-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #626262;
+  padding-right: 115px;
+}
+
+.navigation-list a:hover {
+  color: #03a9f4;
+}
+
+.name-of-article {
+  font-family: "Ubuntu", sans-serif;
+  color: #b4ad9e;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.article-title {
+  font-weight: 700;
+}
+
+.load-more-button {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.load-more-button:hover {
+  color: #03a9f4;
+}
