@@ -3,66 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homework-01</title>
-  <link rel="stylesheet" href="css/normalize.css"
+  <title>Magazine site</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="body-section">
   <header>
-    <nav class="navigation-section">
-      <ul class="navigation-list">
-        <li class="navigation-list-item">
+    <nav class="wrapper">
+      <ul class="site-navigation">
+        <li>
           <a href="#lifestyle">lifestyle</a>
         </li>
-        <li class="navigation-list-item">
+        <li>
           <a href="#photodiary">photodiary</a>
         </li>
-        <li class="navigation-list-item">
+        <li>
           <a href="#">music</a>
         </li>
-        <li class="navigation-list-item">
-          <a href="#" >travel</a>
+        <li>
+          <a href="#">travel</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="main-section">
-      <article id="lifestyle">
-        <img src="img/image.png" height="280" width="420" alt="picture of girl">
-        <p class="name-of-article">Lifestyle</p>
-        <h2 class="article-title">More just a music festival</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
-      </article>
+    <h1 class="visually-hidden">Our magazine site</h1>
+    <section class="main-section wrapper">
+      <h2 class="visually-hidden">Articles</h2>
+      <ul class="articles-list">
+        <li class="article-list-item" id="lifestyle">
+          <img src="img/image.png" height="280" width="420" alt="picture of girl">
+          <p class="name-of-article">Lifestyle</p>
+          <h3 class="article-title">More just a music festival</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+        </li>
 
-      <article>
-        <img src="img/image2.png" height="280" width="420" alt="picture of coffee">
-        <p class="name-of-article">Lifestyle</p>
-        <h2 class="article-title">Life tastes better with coffee</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
-      </article>
+        <li class="article-list-item">
+          <img src="img/image2.png" height="280" width="420" alt="picture of coffee">
+          <p class="name-of-article">Lifestyle</p>
+          <h3 class="article-title">Life tastes better with coffee</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+        </li>
 
-      <article id="photodiary">
-        <img src="img/image3.png" height="280" width="420" alt="picture of two girls">
-        <p class="name-of-article">Photodiary</p>
-        <h2 class="article-title">American dream</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
-      </article>
+        <li class="article-list-item" id="photodiary">
+          <img src="img/image3.png" height="280" width="420" alt="picture of two girls">
+          <p class="name-of-article">Photodiary</p>
+          <h3 class="article-title">American dream</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+        </li>
 
-      <article>
-        <img src="img/image4.png" height="280" width="420" alt="picture of man">
-        <p class="name-of-article">Photodiary</p>
-        <h2 class="article-title">A day exploring the Alps</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
-      </article>
+        <li class="article-list-item">
+          <img src="img/image4.png" height="280" width="420" alt="picture of man">
+          <p class="name-of-article">Photodiary</p>
+          <h3 class="article-title">A day exploring the Alps</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+        </li>
+        <li class="article-list-item">
+          <img src="img/image5.jpg" height="280" width="420" alt="picture of girl with hat">
+          <p class="name-of-article">Lifestyle</p>
+          <h3 class="article-title">Top 10 song for running</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+        </li>
 
+        <li class="article-list-item">
+          <img src="img/image6.jpg" height="280" width="420" alt="picture road">
+          <p class="name-of-article">Lifestyle</p>
+          <h3 class="article-title">Cold winter days</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+        </li>
+      </ul>
       <button class="load-more-button">Load more</button>
 
     </section>
   </main>
-
 </body>
 </html>
