@@ -120,7 +120,6 @@ h2.article-title::after {
 }
 
 .products-list-item {
-  display: block;
   float: left;
 }
 
