@@ -1,0 +1,368 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  color: rgb(255, 255, 255);
+  letter-spacing: -0.02em;
+  /* position: relative; */
+}
+
+.container {
+  width: 1112px;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+.nav-section {
+  padding: 33px 0 27px;
+}
+
+.logo {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 32px;
+  color: rgb(85, 82, 82);
+  float: left;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo::first-letter {
+  color: rgb(26, 188, 156);
+  font-weight: 900;
+}
+
+.nav-list {
+  float: right;
+  padding-top: 10px;
+}
+
+.nav-list-item {
+  float: left;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.nav-list-link{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(15, 1, 1);
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
+  color: rgb(26, 188, 156);
+}
+
+.slider {
+  position: relative;
+}
+
+.slides-list-item {
+  position: relative;
+}
+
+.slider img {
+  height: 600px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.overlay-slider {
+  background-color: rgba(0, 0, 2, 0.5);
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-ctrl {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(26, 188, 156);
+  width: 104px;
+  height: 104px;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-ctrl-prev {
+  float: left;
+  background-image: url(/img/left.png);
+} 
+
+.slider-ctrl-next {
+  float: right;
+  background-image: url(/img/right.png);
+}
+
+.inactive-btn {
+  background-color: rgba(78, 198, 171, 0.6);
+  cursor: auto;
+}
+
+.text {
+  margin: auto;
+  width: 750px;
+  position: absolute;
+  top: 48.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 82px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+.banner-description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+
+.main-section {
+  background-color: rgb(233, 240, 253);
+  padding: 88px 0 100px;
+}
+
+.section-title {
+  font-size: 48px;
+  color: #515151;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-title::after {
+  display: block;
+  content: '';
+  width: 164px;
+  height: 7px;
+  background-color: rgb(26, 188, 156);
+  margin: 0 auto;
+  margin-top: 29px;
+}
+
+.section-list-item {
+  float: left;
+}
+
+.section-list-item:hover .overlay,
+.section-list-item:focus-within .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.section-list-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.section_list-img-item-wrapper {
+  position: relative;
+  width: 255px;
+  height: 282px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  border-width: 10px;
+  border-color: rgba(255, 255, 255, 0.8);
+  border-style: solid;
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5 linear;
+}
+
+.overlay-list {
+  position: absolute;
+  left: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.overlay-list-item {
+  display: block;
+  float: left;
+  margin-bottom: 7px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay-list-item-btn:hover,
+.overlay-list-item-btn:focus {
+  background-color: rgb(26, 188, 156);
+  cursor: pointer;
+}
+
+.section-list-item:hover .product,
+.section-list-item:focus-within .product {
+  background-color: rgb(26, 188, 156);
+}
+
+.overlay-list-item:not(:nth-child(3n)) {
+  margin-right: 9px;
+}
+
+.overlay-list-item-btn {
+  width: 48px;
+  height: 48px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+
+.heart-icon {
+  background-image: url(/img/heart2.png);
+}
+
+.random-icon {
+  background-image: url(/img/random.png);
+}
+
+.clock-icon {
+  background-image: url(/img/clock2.png);
+}
+
+.overlay-list-link-btn {
+  width: 164px;
+  height: 48px;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: rgb(50, 50, 50);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  line-height: 48px;
+  text-transform: uppercase;
+  background-image: url(/img/cart.png);
+  background-position: 10%;
+  background-repeat: no-repeat;
+  padding-left: 38px;
+}
+
+.overlay-list-link-btn:hover,
+.overlay-list-link-btn:focus {
+  background-color: rgb(26, 188, 156);
+  cursor: pointer;
+}
+
+.product {
+  background-color: rgb(50, 50, 50);
+  width: 255px;
+  padding-left: 14px;
+}
+
+.product-title {
+  color: rgb(255, 255, 255);
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.price {
+  float: right;
+  width: 54px;
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.44);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  width: 100%;
+  line-height: 88px;
+  background-color: rgb(50, 50, 50);
+  text-align: center;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  color: rgb(254, 254, 254);
+}
+
+.information-link {
+  color: rgb(70, 191, 169);
+  cursor: pointer;
+}
+
+/* VISUALLY HIDDEN TEHNOLOGY */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
