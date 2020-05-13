@@ -39,13 +39,11 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;
   color: rgb(255, 255, 255);
   letter-spacing: -0.02em;
-  /* position: relative; */
 }
 
 .container {
   width: 1112px;
   margin: 0 auto;
-  /* position: relative; */
 }
 
 .nav-section {
@@ -70,6 +68,7 @@ body {
 .nav-list {
   float: right;
   padding-top: 10px;
+  text-transform: uppercase;
 }
 
 .nav-list-item {
@@ -106,7 +105,8 @@ body {
   width: 100%;
 }
 
-.overlay-slider {
+.slider-img-wrapper::before {
+  content: "";
   background-color: rgba(0, 0, 2, 0.5);
   width: 100%;
   height: 600px;
@@ -134,12 +134,12 @@ body {
 
 .slider-ctrl-prev {
   float: left;
-  background-image: url(/img/left.png);
+  background-image: url(../img/left.png);
 } 
 
 .slider-ctrl-next {
   float: right;
-  background-image: url(/img/right.png);
+  background-image: url(../img/right.png);
 }
 
 .inactive-btn {
@@ -274,15 +274,15 @@ body {
 
 
 .heart-icon {
-  background-image: url(/img/heart2.png);
+  background-image: url(../img/heart2.png);
 }
 
 .random-icon {
-  background-image: url(/img/random.png);
+  background-image: url(../img/random.png);
 }
 
 .clock-icon {
-  background-image: url(/img/clock2.png);
+  background-image: url(../img/clock2.png);
 }
 
 .overlay-list-link-btn {
@@ -296,7 +296,7 @@ body {
   font-size: 14px;
   line-height: 48px;
   text-transform: uppercase;
-  background-image: url(/img/cart.png);
+  background-image: url(../img/cart.png);
   background-position: 10%;
   background-repeat: no-repeat;
   padding-left: 38px;
